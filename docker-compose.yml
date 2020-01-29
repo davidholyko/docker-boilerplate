@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  my-app:
+    container_name: my-app
+    build: .
+    ports:
+      - 1993:1993
+    volumes:
+      - ./:/app
+      - /app/node_modules/
